@@ -12,7 +12,6 @@ import { useSearchParams } from "react-router-dom";
 import SearchBox from "../components/SearchBox";
 import SideBar from "../components/SideBar";
 
-
 const ProductsPage = () => {
   const products = useProducts(); //use from globalData
   const [search, setSearch] = useState("");
@@ -43,7 +42,7 @@ const ProductsPage = () => {
             <Card key={p.id} data={p} />
           ))}
         </div>
-        <SideBar setQuery={setQuery} />
+        <SideBar query={query} setQuery={setQuery} />
       </div>
     </>
   );
