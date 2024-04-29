@@ -48,6 +48,8 @@
 .actions div {
   display: flex;
   justify-content: center;
+  column-gap: 10px;
+  text-align: center;
 }
 
 .actions div span {
